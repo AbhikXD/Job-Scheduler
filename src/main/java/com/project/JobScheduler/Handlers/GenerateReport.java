@@ -7,6 +7,11 @@ import org.springframework.stereotype.Component;
 public class GenerateReport  implements JobHandler{
 
     @Override
+    public String type() {
+        return "GENERATE_REPORT";
+    }
+
+    @Override
     public void handle(Jobs job) {
         System.out.println("Generating Report");
     }
