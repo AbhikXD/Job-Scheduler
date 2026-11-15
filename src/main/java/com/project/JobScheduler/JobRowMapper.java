@@ -21,7 +21,7 @@ public class JobRowMapper implements RowMapper<Jobs> {
                 rs.getInt("attempts"),
                 rs.getInt("max_attempts"),
                 rs.getString("locked_by"),
-                instant(rs,"locked_util"),
+                instant(rs,"locked_until"),
                 rs.getString("idempotency_key"),
                 rs.getString("last_error"),
                 instant(rs,"created_at"),
