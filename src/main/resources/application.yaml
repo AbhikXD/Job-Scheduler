@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/jobscheduler
+    username: postgres
+    password: postgres
+  flyway:
+    enabled: true
