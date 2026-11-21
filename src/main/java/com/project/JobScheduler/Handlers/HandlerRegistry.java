@@ -4,10 +4,11 @@ import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Component
 public class HandlerRegistry {
-    public final HashMap<String, JobHandler> handlersMap  = new HashMap<>();
+    private final Map<String, JobHandler> handlersMap  = new HashMap<>();
 
     public HandlerRegistry(List<JobHandler> listHandlers){
         for(JobHandler handler : listHandlers){
